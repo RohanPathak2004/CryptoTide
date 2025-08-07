@@ -1,0 +1,97 @@
+.home{
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.hero{
+    text-align: center;
+    font-size: 3.6rem;
+    margin-top: 60px;
+}
+.home p{
+    text-align: center;
+}
+.home form{
+    padding :15px ;
+    background: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 55px;
+    border-radius: 10px;
+}
+.home form input{
+    width: 85%;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+.home form button{
+    padding: 9px 30px;
+    background: #2559bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crypto-table{
+    max-width: 100%;
+    margin: auto;
+    background: linear-gradient(#04045b,#0a0a86);
+    border-radius: 15px;
+    margin-bottom: 80px;
+}
+.table-layout{
+    max-width: 800px;
+    display:grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.coin-img{
+    width: 30px;
+}
+.coin-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.table-layout:last-child{
+    border:none;
+}
+.green{
+    color:lawngreen;
+    text-align: center;
+}
+.red{
+    color:orangered;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .table-layout{
+        grid-template-columns:0.5fr 3fr 1fr 1fr;
+    }
+    .market-cap{
+        display:none;
+    }
+}
+@media (max-width: 500px) {
+    .table-layout div img{
+        width: 20px;
+    }
+    .table-layout{
+        font-size: 12px;
+    }
+    .home form input{
+        width:100px;
+
+    }
+    .home form{
+        background:none;
+    }
+}

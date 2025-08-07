@@ -1,0 +1,71 @@
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    border-bottom : 2px solid #444343;
+    padding: 20px 10%;
+    margin: 0;
+}
+ul.nav-center{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 28%;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1rem;
+
+}
+ul.nav-center li{
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap:5px
+}
+.nav-right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-right button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size:small;
+    display: flex;
+    gap: max(1vw,12px);
+    align-items: center;
+    justify-content: center;
+}
+.nav-right button img{
+    width: 13px;
+}
+.nav-right select {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.nav-right select option{
+    background: #04045b;
+    color: white;
+}
+@media (max-width: 768px) {
+    .nav{
+        padding: 20px 5%;
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav button img{
+        width: 20px;
+    }
+}
